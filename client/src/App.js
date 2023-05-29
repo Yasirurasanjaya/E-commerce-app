@@ -8,7 +8,6 @@ import Navbar from "./scenes/global/Navbar";
 import CartMenu from "./scenes/global/CartMenu";
 import Footer from "./scenes/global/Footer";
 
-
 const ScrollTop = () => {
   const { pathname } = useLocation();
   useEffect(() => {
@@ -21,6 +20,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Navbar />
+
         <ScrollTop />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -28,8 +28,8 @@ function App() {
           <Route path="checkout" element={<Checkout />} />
           <Route path="/checkout/success" element={<Confirmation />} />
         </Routes>
-        <CartMenu/>
-        <Footer/>
+        <CartMenu />
+        <Footer />
       </BrowserRouter>
     </div>
   );
