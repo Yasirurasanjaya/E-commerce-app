@@ -13,7 +13,23 @@ const Subscribe = () => {
       <Typography>
         and receive $20 coupon for your first order when you checkout
       </Typography>
-      Subscribe
+      <Box
+        p="2px ,4px"
+        m="15px auto"
+        display="flex"
+        alignItems="center"
+        width="75%"
+        backgroundColor="#F2F2F2"
+      >
+        <InputBase
+          sx={{ ml: 1, flex: 1 }}
+          placeholder="Enter email"
+          onChange={(e) => setEmail(e.targetvalue)}
+          value={email}
+        />
+        <Divider sx={{height:28, m:0.5}} orientaion="vertical"/>
+        <Typography sx={{p:"10px", ":hover" : {cursor:"pointer"}}}>subscribe</Typography>
+      </Box>
     </Box>
   );
 };
